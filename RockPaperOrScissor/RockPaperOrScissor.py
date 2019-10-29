@@ -39,7 +39,7 @@ if os.path.exists("/tmp/rps.zip") == False and os.path.exists("/tmp/rps/") == Fa
 if os.path.exists("/tmp/rps-test-set.zip") == True:
     print("Found the test database zip. Not downloading again. :D")
 
-if os.path.exists("/tmp/rps-test-set.zip") == False and os.path.exists("/tmp/rps-test-set/"):
+if os.path.exists("/tmp/rps-test-set.zip") == False and os.path.exists("/tmp/rps-test-set/") == False:
     # Download the testing database so we can compare.
     print("Downloading test database...")
     url = "https://storage.googleapis.com/laurencemoroney-blog.appspot.com/rps-test-set.zip"
